@@ -1,0 +1,110 @@
+:root{ /*raiz do codigo e define as mudancas posteriores*/
+    --vermelho: #E50914; 
+    --preta: #141414;
+}
+
+*{ 
+    margin: 0;   /* *{ em qualquer documento a formatacao sera a mesma*/
+    padding: 0;
+    box-sizing: border-box; /*define a borda da pagina e fica responsivo*/
+}
+
+/*elemento principal*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif; /* ou procura em google fontes*/
+    color: white;
+}
+
+header .container{
+    margin-left: 5px; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center; /*alinha de forma vertical*/
+    justify-content: left;
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{  
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/*modifica a cor da letra quando o mouse passa por cima*/
+header nav a:hover{
+    color:#fff;
+    
+}
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/filme.jpg');
+
+    height: 555px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.filme-principal .descricao{
+    margin-top: 9px;
+    margin-bottom: 90px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.titulo{
+    margin-top: 28%; /*posicionamento fluido: trabalha com porcentagens*/
+    font-size: 45px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+/* fonteawesome.com (script para incorporar a pagina html) encontrar icones personalizados para os botoes */
+    background-color:  rgba(0,0,0,0.5); /*usando a prop do background-color que define a cor do apenas do botao| efeito de transparencia usando rgba(vermelho,verde,azul, camada alfa)*/
+    border: none; /*ja possui uma borda padrao que deve ser retirada*/
+    color: white;
+
+    padding: 15px 30px; /*espaco interno do meu elemento | os valores se referem as 4 posicoes em sentido horario (cima-baixo, esquerda-direita) */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*estilo de cursor que auxilia o usuario a saber onde existe um botao */
+    transition: .3s ease all; /*promove efeito degrade na transicao de cor do botao durante 3s*/
+}
+.botao:hover{/*quando o cursor passa no botao ocorre mudanca de cor*/
+    background-color: white;
+    color: black;
+
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 10%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top: 5px;
+}
+

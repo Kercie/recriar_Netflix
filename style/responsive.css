@@ -1,0 +1,18 @@
+@media screen and (max-width: 700px){/*serve para formatar as caracteristicas do site quando ele estiver em modo responsivo ate 700 fora isso fica na formatacao padrao.  */
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width:150px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .descricao {
+        width:50%
+    }
+ /*JQuery:cria formatacao condicional denpendendo do tamanho da tela*/   
+}
